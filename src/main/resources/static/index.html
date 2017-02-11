@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>GeoIp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">GeoIp</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>GeoIp</h1>
+        <p class="lead">Mini Service for retrive country iso code and city name for a given IP address and to get the operation system and the browser from a given user agent string.</p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>UserAgent</h4>
+          <p>Get user agent information (browser name and operation system) by provide a user agent string to the service url : <a href="https://geoip.borehack.com/useragent?useragent=Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko">https://geoip.borehack.com/useragent?useragent=Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko</a>.</p>
+
+          <h4>GeoIp &amp; UserAgent</h4>
+          <p>Get geo and user agent information at once by accessing the service url <a href="https://geoip.borehack.com/geouser?ip=1.1.1.1&useragent=Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko">https://geoip.borehack.com/geouser?ip=1.1.1.1&amp;useragent=Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko</a></p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>GeoIp</h4>
+          <p>Get geo information (country iso code and city name) by provide a ip address to the service url : <a href="https://geoip.borehack.com/geoip?ip=1.1.1.1">https://geoip.borehack.com/geoip?ip=1.1.1.1</a>.</p>
+
+          <h4>Info: GeoIp</h4>
+          <p>This product includes GeoLite2 data created by MaxMind, available from
+          <a href="http://www.maxmind.com">http://www.maxmind.com</a>.</p>
+          
+          <h4>Info: UserAgent</h4>
+          <p><a href="http://www.bitwalker.eu/software/user-agent-utils">http://www.bitwalker.eu/software/user-agent-utils</a></p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2017 borehack.com</p>
+      </footer>
+
+    </div>
+  </body>
+</html>
