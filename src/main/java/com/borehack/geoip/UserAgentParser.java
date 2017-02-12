@@ -12,7 +12,7 @@ public class UserAgentParser {
 
     public UserAgentInfo parseUserAgent(String userAgent) {
         if (userAgent == null || userAgent.isEmpty()) {
-            return new UserAgentInfo("", "");
+            return new UserAgentInfo();
         }
 
         try {
@@ -22,7 +22,7 @@ public class UserAgentParser {
             return new UserAgentInfo(browser, operationSystem);
         } catch (Exception e) {
             LOGGER.info(e.getMessage());
-            return new UserAgentInfo("", "");
+            return new UserAgentInfo();
         }
     }
 }

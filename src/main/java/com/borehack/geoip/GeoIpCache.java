@@ -36,7 +36,7 @@ public class GeoIpCache {
 
     public GeoIpInfo get(String remoteAddr) {
         if (remoteAddr == null || remoteAddr.isEmpty()) {
-            return new GeoIpInfo("", "");
+            return new GeoIpInfo();
         }
 
         try {
@@ -46,7 +46,7 @@ public class GeoIpCache {
             return new GeoIpInfo(country.getIsoCode(), response.getCity().getName());
         } catch (Exception e) {
             LOGGER.info(e.getMessage());
-            return new GeoIpInfo("", "");
+            return new GeoIpInfo();
         }
     }
 
